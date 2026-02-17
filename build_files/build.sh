@@ -12,7 +12,7 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 install -y gnome-themes-extra zenity blivet-gui fastfetch hardinfo2 btrfs-assistant btrfsmaintenance virt-manager libvirt virt-install
 
-wget https://github.com/zoncky/studious-octo-goggles/blob/main/rpms/simple-thumbnailer-stl-1.0-1.fc42.x86_64.rpm
+wget https://github.com/zoncky/Silverblue/blob/main/rpms/simple-thumbnailer-stl-1.0-1.fc42.x86_64.rpm
 
 wget https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm
 
