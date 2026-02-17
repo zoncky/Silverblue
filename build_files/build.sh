@@ -17,13 +17,13 @@ wget https://github.com/zoncky/Silverblue/blob/main/stl_thumb/simple-thumbnailer
 cp simple-thumbnailer-stl /usr/bin
 cp simple-thumbnailer-stl.thumbnailer /usr/share/thumbnailers
 
-wget https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm
+#wget https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm
 
-dnf5 install -y ./teamviewer.x86_64.rpm
+#dnf5 install -y ./teamviewer.x86_64.rpm
 
 dnf5 remove -y yelp firefox firefox-langpacks gnome-tour gnome-system-monitor 
 
-rm -f simple-thumbnailer-stl-1.0-1.fc42.x86_64.rpm simple-thumbnailer-stl simple-thumbnailer-stl.thumbnailer
+rm -f simple-thumbnailer-stl simple-thumbnailer-stl.thumbnailer #teamviewer.x86_64.rpm
 
 # Use a COPR Example:
 #
