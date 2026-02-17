@@ -19,7 +19,7 @@ cp simple-thumbnailer-stl.thumbnailer /usr/share/thumbnailers
 
 wget https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm
 
-dnf5 install -y ./teamviewer_15.74.5.x86_64.rpm
+dnf5 install -y ./teamviewer.x86_64.rpm
 
 dnf5 remove -y yelp firefox firefox-langpacks gnome-tour gnome-system-monitor 
 
