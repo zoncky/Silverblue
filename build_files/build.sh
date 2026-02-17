@@ -12,8 +12,8 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 install -y gnome-themes-extra zenity blivet-gui fastfetch hardinfo2 btrfs-assistant btrfsmaintenance virt-manager libvirt virt-install
 
-wget https://github.com/zoncky/Silverblue/blob/main/stl_thumb/simple-thumbnailer-stl
-wget https://github.com/zoncky/Silverblue/blob/main/stl_thumb/simple-thumbnailer-stl.thumbnailer
+wget https://github.com/zoncky/Silverblue/raw/refs/heads/main/stl_thumb/simple-thumbnailer-stl
+wget https://github.com/zoncky/Silverblue/raw/refs/heads/main/stl_thumb/simple-thumbnailer-stl.thumbnailer
 cp simple-thumbnailer-stl /usr/bin
 cp simple-thumbnailer-stl.thumbnailer /usr/share/thumbnailers
 chmod +x /usr/bin/simple-thumbnailer-stl
