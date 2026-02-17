@@ -12,15 +12,18 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 install -y gnome-themes-extra zenity blivet-gui fastfetch hardinfo2 btrfs-assistant btrfsmaintenance virt-manager libvirt virt-install
 
-wget https://github.com/zoncky/Silverblue/blob/main/rpms/simple-thumbnailer-stl-1.0-1.fc42.x86_64.rpm
+wget https://github.com/zoncky/Silverblue/blob/main/stl_thumb/simple-thumbnailer-stl
+wget https://github.com/zoncky/Silverblue/blob/main/stl_thumb/simple-thumbnailer-stl.thumbnailer
+cp simple-thumbnailer-stl /usr/bin
+cp simple-thumbnailer-stl.thumbnailer /usr/share/thumbnailers
 
 wget https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm
 
-dnf5 install -y ./simple-thumbnailer-stl-1.0-1.fc42.x86_64.rpm ./teamviewer_15.74.5.x86_64.rpm
+dnf5 install -y ./teamviewer_15.74.5.x86_64.rpm
 
 dnf5 remove -y yelp firefox firefox-langpacks gnome-tour gnome-system-monitor 
 
-rm -f simple-thumbnailer-stl-1.0-1.fc42.x86_64.rpm teamviewer_15.74.5.x86_64.rpm
+rm -f simple-thumbnailer-stl-1.0-1.fc42.x86_64.rpm simple-thumbnailer-stl simple-thumbnailer-stl.thumbnailer
 
 # Use a COPR Example:
 #
