@@ -14,7 +14,7 @@ dnf5 install -y gnome-themes-extra zenity blivet-gui fastfetch hardinfo2 btrfs-a
 
 wget https://github.com/zoncky/studious-octo-goggles/blob/main/rpms/simple-thumbnailer-stl-1.0-1.fc42.x86_64.rpm
 
-wget https://github.com/zoncky/studious-octo-goggles/blob/main/rpms/teamviewer_15.74.5.x86_64.rpm
+wget https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm
 
 dnf5 install -y ./simple-thumbnailer-stl-1.0-1.fc42.x86_64.rpm ./teamviewer_15.74.5.x86_64.rpm
 
