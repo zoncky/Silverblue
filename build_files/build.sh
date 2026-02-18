@@ -10,7 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y blivet-gui btrfs-assistant btrfsmaintenance fastfetch hardinfo2 zenity gnome-themes-extra
+dnf5 install -y btrfs-assistant btrfsmaintenance #fastfetch hardinfo2 zenity gnome-themes-extra libvirt virt-install virt-manager dropbox
 
 wget https://github.com/zoncky/Silverblue/raw/refs/heads/main/stl_thumb/simple-thumbnailer-stl
 wget https://github.com/zoncky/Silverblue/raw/refs/heads/main/stl_thumb/simple-thumbnailer-stl.thumbnailer
